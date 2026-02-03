@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nike</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+/* Header */
+header {
+  padding: 80px 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+}
+
+.navbar a {
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Sidebar */
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+.side h2, .side h3 {
+  margin-bottom: 10px;
+}
+
+.side img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Main Content */
+.main {
+  flex: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.main h2 {
+  margin-bottom: 5px;
+}
+
+.main h5 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.main img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.main p {
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .container, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>NIKE</h1>
+  <p>Just Do It.</p>
+</header>
+
+<div class="navbar">
+  <a href="#">Men</a>
+  <a href="#">Women</a>
+  <a href="#">Kids</a>
+  <a href="#">Sale</a>
+</div>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="side">
+    <h2>About Nike</h2>
+   <img src="pexels-ox-street-3848035-6050926.jpg" alt="Nike shoes">
+<p>Nike is a global leader in athletic footwear, apparel and innovation.</p>
+
+
+    <h3>Popular Categories</h3>
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Running shoes">
+    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Sneakers">
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2>Air Jordan Collection</h2>
+    <h5>Iconic Style • Performance • Legacy</h5>
+    <img src="pexels-bekah-allmark-88109507-10433622.jpg" alt="Air Jordan">
+    <p>Experience the legacy of Air Jordan with unmatched comfort and bold design.</p>
+
+    <br>
+
+    <h2>Nike Running Shoes</h2>
+    <h5>Built for Speed & Comfort</h5>
+    <img src="pexels-t-j-2764242-4328466.jpg" alt="Nike running">
+    <p>Engineered to help runners push limits with lightweight cushioning and durability.</p>
+  </div>
+
+</div>
+
+<footer>
+  <h2>© 2026 Nike. All Rights Reserved.</h2>
+</footer>
+
+</body>
+</html>
